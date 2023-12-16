@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/bg_avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="80dp"
+        android:src="@drawable/bg_item_user_avatar"
+        android:layout_height="80dp"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/text_view_contact_initials"
+        app:layout_constraintStart_toStartOf="@id/bg_avatar"
+        app:layout_constraintEnd_toEndOf="@id/bg_avatar"
+        app:layout_constraintTop_toTopOf="@id/bg_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/bg_avatar"
+        android:textSize="30sp"
+        android:text="C1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text_view_contact_name"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/bg_avatar"
+        app:layout_constraintTop_toTopOf="@id/bg_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/bg_avatar"
+        android:layout_marginStart="10dp"
+        android:text="Contact 1"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:importantForAccessibility="no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
